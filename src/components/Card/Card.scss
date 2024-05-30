@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 // font-family: "Open Sans", sans-serif;
-.Card{
+
+.caixaDeDescricao{
+    height: 20rem;
+    overflow: hidden;
     border: 2px solid  #FEFEFE;
     border-top: none;
     width: 98%;
-    padding: 2rem;
+    padding: 0 2rem;
     margin: 0 auto;
+    transition: all .3s ease-in-out;
+    
+    .descricao{
+        color: #FEFEFE;
+        font-family: "Open Sans", sans-serif;
+        font-size: 2.8rem;
+        line-height: 4rem;
+        letter-spacing: .1rem;
+    }
+}
+.Card{
+    position: relative;
     color: #FEFEFE;
     font-family: "Open Sans", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 20rem;
 
     .flexMarcaCerveja{
         display: flex;
@@ -32,7 +48,23 @@
         font-size: 2.8rem;
         text-transform: uppercase;
     }
+
     h2{
         font-size: 3rem;
     }
+    button{
+        position: absolute;
+        left: 98%;
+        top: 94%;
+        transform: translate(-100%, -100%);
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        img{
+            width: 4rem;
+            height: 4rem;
+            transition: .3s ease-in-out;
+        }
+    }
+
 }
