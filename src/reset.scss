@@ -14,9 +14,34 @@ body {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 500px) {
+  html {
+    font-size: 35%;
+  }
+}
 
 @media (max-width: 400px) {
   html {
     font-size: 30%;
+  }
+}
+@media (max-width: 300px) {
+  html {
+    font-size: 25%;
+  }
+}
+@media (max-width: 240px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media (max-width: 170px) {
+  html {
+    font-size: 15%;
+  }
+}
+@media (max-width: 127px) {
+  html {
+    font-size: 10%;
   }
 }
